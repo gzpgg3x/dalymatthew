@@ -29,9 +29,9 @@ def getPosts(request, selected_page=1):
 
 
 
-# def getPost(request, postSlug):
-#     # Get specified post
-#     post = Post.objects.filter(slug=postSlug)
+def getPost(request, postSlug):
+    # Get specified post
+    post = Post.objects.filter(slug=postSlug)
 
-#     # Display specified post
-#     return render_to_response('posts.html', { 'posts':post})
+    # Display specified post
+    return render_to_response('posts.html', { 'posts':post})
